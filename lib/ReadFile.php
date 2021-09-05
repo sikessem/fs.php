@@ -2,15 +2,7 @@
 
 trait ReadFile {
 
-  protected $stream;
-
-  /**
-   * @return resource
-   */
-  function stream() {
-    
-    return $this->stream;
-  }
+  use Stream;
 
   function read(int $length): string|false {
     
