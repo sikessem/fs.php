@@ -1,0 +1,42 @@
+{
+    "name": "sikessem/fs",
+    "type": "library",
+    "description": "PHP file system ",
+    "license": "Apache-2.0",
+    "keywords": [
+        "fs",
+        "sikessem",
+        "php"
+    ],
+    "authors": [{
+        "homepage": "https://sikessem.com/",
+        "name": "SIGUI Kessé Emmanuel",
+        "email": "contact@sikessem.com",
+        "role": "Developer"
+    }],
+    "support": {
+        "source": "https://github.com/SIKessEm/fs.php",
+        "issues": "https://github.com/SIKessEm/fs.php/issues"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "files": [
+            "ext/fs.php"
+        ],
+        "psr-4": {
+          "SIKessEm\\FileSystem\\": "lib/"
+        }
+    },
+    "homepage": "https://github.com/SIKessEm/fs.php#readme",
+    "config": {
+    	"vendor-dir": "pkg",
+        "bin-dir": "cli",
+        "web-dir": "cgi",
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
