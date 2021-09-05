@@ -1,8 +1,8 @@
 <?php namespace SIKessEm\FileSystem;
 
-class FileReader implements ReadableFile {
+class FileReader implements FileReaderInterface {
 
-  use ReadFile;
+  use FileReaderTrait;
 
   function __construct(string $file) {
 
@@ -15,4 +15,3 @@ class FileReader implements ReadableFile {
     $this->stream = fopen($file, 'r');
   }
 }
-

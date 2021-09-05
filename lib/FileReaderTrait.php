@@ -1,12 +1,11 @@
 <?php namespace SIKessEm\FileSystem;
 
-trait ReadFile {
+trait FileReaderTrait {
 
-  use Stream;
+  use StreamTrait;
 
   function read(int $length): string|false {
     
     return fread($this->stream, $length);
   }
 }
-
