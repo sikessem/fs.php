@@ -1,6 +1,6 @@
 <?php namespace SIKessEm\FileSystem;
 
-trait Stream {
+trait StreamTrait {
 
   protected $stream;
 
@@ -12,4 +12,3 @@ trait Stream {
     return $this->stream;
   }
 }
-
